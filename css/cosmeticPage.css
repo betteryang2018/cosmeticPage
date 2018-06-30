@@ -1,0 +1,773 @@
+/* common css */
+html{
+	font-size: 62.5%;
+}
+
+@media(max-width: 767px){
+	html{
+		font-size: 9px;
+	}
+}
+
+@media(min-width: 767px) and(max-width: 992px){
+	html{
+		font-size: 8px;
+	}
+}
+
+@media(min-width: 992px){
+	html{
+		font-size: 10px;
+	}
+}
+
+@media(min-width: 1200px){
+	html{
+		font-size: 11px;
+	}
+}
+
+img{
+	border:none;
+	max-width: 100%;
+}
+
+body,ul,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,img,div,dl,dt,dd,i{
+	margin:0;
+	padding:0;
+	list-style: none;
+	font-style: normal;
+}
+
+body{
+	font-family: Open sans,Helvetica Neue, Helvetica, 'microsoft yahei', Arial, sans-serif;
+	width: 100%;
+	background: #fff;
+	color:#333;
+}
+
+a, a:hover{
+	text-decoration: none;
+	color:#333;
+	cursor: pointer;
+}
+
+.clear{
+	clear:both;
+}
+
+@media(max-width: 767px){
+.pc-con{
+	display: none;
+}
+}
+
+@media(min-width: 768px){
+.mobile-con{
+	display: none;
+}
+}
+
+/*---------化妆品网站首页 css---------*/
+
+
+.header{
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	margin:0 auto;
+	z-index: 10001;
+}
+
+.header .headTopBar{
+	padding:10px 0;
+	background: #edb542;
+}
+
+.header .headBarLeft a{
+	display: inline-block;
+	padding:0 10px;
+}
+
+.header .outLink{
+	float:left;
+}
+
+.header .outLink li{
+	float:left;
+	padding:0 10px;
+}
+
+.header .cartLink{
+	width: 10rem;
+	float:left;
+	color:#fff;
+	padding-left:10px;
+	background:url(../images/pattren.png) repeat ;
+	background-color: rgba(0,0,0,0.5);
+	opacity: 0.8;
+	margin:-10px 0;
+	height: 40px;
+	line-height: 40px;
+}
+
+.header .cartLink i{
+	float:left;
+	padding:0 10px;
+	position:relative;
+	top:12px;
+}
+
+.header .pc-header{
+	height: 80px;
+	line-height: 80px;
+}
+
+.header .pc-header .hdLeft{
+	position:relative;
+	padding:0;
+}
+.header .pc-header .hdLeft .bgColor1{
+	background: #edb542;
+	width:40%;
+	height: 80px;
+	position: absolute;
+	left:0;
+	top:0;
+}
+
+.header .pc-header .hdLeft .bgColor2{
+	width:60%;
+	height: 80px;
+	position: absolute;
+	right:0;
+	top:0;
+	background:url(../images/pattren.png) repeat center center ;
+	background-color: rgba(0,0,0,0.7);
+	z-index: 1;
+}
+
+.header .pc-header .hdLeft img{
+	position: relative;
+	bottom: 3px;
+	z-index: 2;
+}
+
+.header .pc-header .hdRightWrap{
+	position:relative;
+	text-align: right;
+	background:url(../images/pattren.png) repeat center center ;
+	background-color: rgba(0,0,0,0.7);
+}
+
+.header .pc-header .hdRightWrap .searchBtn{
+	float:right;
+	padding:0 10px;
+}
+
+.header .pc-header .hdRightWrap .searchBtn a{
+	color:#9b9b9b;
+	border:1px solid #9b9b9b;
+	border-radius: 100%;
+	padding:3px 6px 4px 8px;
+}
+
+
+.header .pc-header .hdRightWrap .menuBox li{
+	float:left;
+	padding:0 10px;
+	color:#fff;
+}
+
+.header .pc-header .hdRightWrap .menuBox li a{
+	color:#fff;
+}
+
+.header .pc-header .hdRight  .menuBox{
+	position:absolute;
+	right:70px;
+	top:0;
+}
+
+.header .pc-header .hdRight .dropdown-menu{
+	background:url(../images/pattren.png) repeat center center ;
+	background-color: rgba(0,0,0,0.7);
+	border-radius: 0;
+	border-top:5px solid #edb542;
+}
+
+.header .pc-header .hdRight .dropdown-menu > li > a:hover{
+	color:#000;
+	background-color: #edb542;
+}
+
+.header .pc-header .hdRight .dropdown:hover{
+	border-bottom:3px solid #edb542;
+	box-sizing: border-box;
+}
+
+/*-----------slider css-------------*/
+
+.carousel-control{/* 
+	padding-top: 23%; */
+}
+
+.carousel-control .fa-angle-left{
+	width:40px;
+	height: 82px;
+	line-height: 70px;
+	padding-top: 5px;
+	padding-right: 5px;
+	background:rgba(0,0,0,0.7);
+    border-radius: 0 130px 130px 0;
+	color:#848484;
+	font-size: 30px;
+	position:absolute;
+	left:0;
+	top:40%;
+}
+
+
+.carousel-control .fa-angle-right{
+	width:40px;
+	height: 82px;
+	line-height: 70px;
+	padding-top: 5px;
+	padding-left: 5px;
+	background:rgba(0,0,0,0.7);
+    border-radius: 130px 0  0 130px;
+	color:#848484;
+	font-size: 30px;
+	position:absolute;
+	right:0;
+	top:40%;
+}
+
+.carousel-control .fa-angle-left:hover, .carousel-control .fa-angle-right:hover{
+	background:#edb542;
+}
+
+.carousel-control.left, .carousel-control.right{
+	background-image: none;
+}
+
+.carousel-indicators li{
+	width:30px;
+	height: 7px;
+	background: #dbdbdb;
+	border-color:#dbdbdb;
+}
+
+.carousel-indicators li:hover, .carousel-indicators .active{
+	width:30px;
+	height: 7px;
+	background: #edb542;
+	border-color:#edb542;
+}
+
+
+/*---------info css---------*/
+
+.infoBanner{
+	background:#f5f5f5;
+	padding:2rem 0;
+}
+
+.infoBanner .infoLeft{
+	height: 30px;
+	line-height: 30px;
+}
+
+.infoBanner .infoLeft h2{
+	color:#edb542;
+	font-size: 1.8rem;
+	line-height: 30px;
+	float:left;
+}
+
+.infoBanner .infoLeft span{
+	float:left;
+	padding:0 20px;
+	color:#888;
+	font-size: 1.4rem;
+}
+
+.infoBanner .infoLeft .infoContent{
+	float:left;
+	font-size: 1.4rem;
+}
+
+.infoBanner .infoLeft .infoContent a{
+	color:#888;
+}
+
+.infoControl li{
+	float:left;
+	width:30px;
+	height: 30px;
+	line-height: 30px;
+	background:#fff;
+    border-radius: 2px;
+    box-shadow: 0 0 2px rgba(0,0,0,0.2);
+    color:#888;
+    text-align: center;
+    margin:0 3px;
+    font-size: 1.6rem;
+}
+
+.infoControl li a{
+    color:#888;
+}
+
+.infoControl .begin{
+	font-size: 1.2rem;
+}
+
+@media(max-width: 767px){
+.infoBanner{
+	display: none;
+}
+}
+
+
+/*---------intro css---------*/
+
+.mainWrap .titBox{
+	margin-top: 4.5rem;
+	margin-bottom: 1rem;
+}
+
+.mainWrap .titBox .divider{
+	margin:1rem 0;
+}
+
+.mainWrap .intro{
+	text-align: center;
+}
+
+.mainWrap .introContent{
+	padding-left:2rem;
+}
+
+.mainWrap .introContent .introCon h4{
+	font-weight: bold;
+	margin:1rem 0;
+}
+
+.mainWrap .introContent .introConWrap{
+	margin:5rem 1rem 0;
+	position: relative;
+	padding:2rem;
+	border:1px solid #ddd;
+	border-radius: 4px;
+	background: #fff;
+}
+
+.mainWrap .introContent .introConWrap .iconBox{
+	position:absolute;
+	top:-25px;
+	left:-25px;
+	background: #fff;
+	width:58px;
+	height: 58px;
+	border:1px solid #ddd;
+	border-radius: 4px;
+	z-index: -2;
+	margin:-2px;
+}
+
+.mainWrap .introContent .introConWrap span{
+	display: block;
+	position:absolute;
+	top:-25px;
+	left:-25px;
+	background: #fff;
+	font-size: 2.8rem;
+	width:55px;
+	height: 55px;
+	line-height: 55px;
+}
+
+
+/*---------product css---------*/
+
+.mainWrap .product{
+	text-align: center;
+}
+
+.mainWrap .product ul li{
+	padding:0;
+}
+
+.mainWrap .product .galleryWrap{
+	position: relative;
+	overflow: hidden;
+}
+
+.mainWrap .product .galleryWrap img{
+	transition:all 0.6s;
+}
+
+.mainWrap .product .galleryWrap img:hover{
+	transform:scale(1.4);
+}
+
+.mainWrap .product .galleryWrap .popDiv{
+	display: none;
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	background:rgba(0,0,0,0.5);
+}
+
+.mainWrap .product .popDiv .captionWrap{
+	position: absolute;
+	top: 30%;
+	width: 100%;
+}
+
+.mainWrap .product .galleryWrap .captionWrap h3{
+	font-size: 2.8rem;
+	line-height: 3.8rem;
+	color:#fff;
+}
+
+.mainWrap .product .galleryWrap .captionWrap a{
+	display: block;
+	font-size: 2.2rem;
+	color:#edb542;
+}
+
+.mainWrap .product .galleryWrap .captionWrap a:hover{
+	color:#fff;
+}
+
+.mainWrap .product .popDiv .captionIcon{
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+}
+
+.mainWrap .product .captionIcon .leftIcon,.mainWrap .product .captionIcon .rightIcon{
+    position: relative;
+    top: 80px;
+	float: left;
+	width:45%;
+	padding:10px 0;
+	background: #edb542;
+	color:#fff;
+	margin:0 2.5%;
+	font-size:1.6rem;
+}
+
+
+/*---------newsCon css---------*/
+
+.mainWrap .news{
+	margin-bottom: 3rem;
+}
+
+.mainWrap .newsConWrap .newsImgBox{
+	position: relative;
+}
+
+.mainWrap .newsConWrap .newsImgBox .popBox{
+	display: none;
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height: 100%;
+	background:rgba(0,0,0,0.5);
+	text-align: center;
+}
+
+.mainWrap .newsConWrap .newsImgBox .popBox a{
+	font-size:2.6rem;
+	color:#edb542;
+	position: relative;
+	top:40%;
+}
+
+.mainWrap .newsConWrap .newsCon{
+	padding:0 1rem;
+}
+
+.mainWrap .newsConWrap .newsCon h4{
+	font-size: 1.4rem;
+	padding:1rem 0;
+	font-weight: bold;
+}
+
+.newsBottomWrap .bottomCon{
+	margin:1rem 0;
+}
+
+.newsBottomWrap .bottomCon .dateTime{
+	float: left;
+}
+
+.newsBottomWrap .bottomCon .bottomText{
+	float:right;
+}
+
+.newsBottomWrap .readMore{
+	display: block;
+	clear: both;
+	text-align: center;
+	position: relative;
+	top:30px;
+	font-size: 1.4rem;
+	margin-bottom: 30px;
+}
+
+.newsBottomWrap .readMore a{
+	display: inline-block;
+	background: #ddd;
+	padding:10px 30px;
+	border-radius: 4px;
+}
+.newsBottomWrap .readMore a:hover{
+	background: #edb542;
+}
+
+
+/*---------countBanner css---------*/
+.countBanner{
+	background: url(../images/index-counter.jpg) no-repeat center center;
+	color:#fff;
+}
+
+.countBanner .countWrap{
+	background: rgba(0,0,0,0.7) url(../images/pattren.png) repeat center center; 
+	padding:4rem 0;
+}
+
+.countBanner .countWrap .fa{
+	float:left;
+	display: inline-block;
+	font-size: 5.5rem;
+	height: 6rem;
+	line-height: 7rem;
+}
+
+.countBanner .countWrap .countCon{
+	float: left;
+	border-left:1px solid #ddd;
+	padding-left:3rem; 
+	margin-left:3rem; 
+	margin-right: -2rem;
+}
+
+.countBanner .countWrap .countCon h1{
+	font-size: 4rem;
+}
+
+.countBanner .countWrap .countCon small{
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+@media(max-width: 1023px){
+.countBanner{
+	display: none;
+}
+}
+
+
+
+/*---------partner css---------*/
+
+.partnerMainWrap{
+	margin-bottom: 3rem;
+}
+
+.partner #owl-partner {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.partner #owl-partner .item {
+    display: block;
+    margin: 5px;
+    border:1px solid #ddd;
+}
+
+.partner #owl-partner img {
+    display: block;
+    width: 100%;
+}
+
+.owl-carousel .owl-item{
+
+}
+
+.partner #owl-partner .owl-nav{
+	display: none;
+}
+
+.partner #owl-partner .owl-dots {
+	text-align: center;
+	margin: 2rem;
+}
+
+.partner #owl-partner .owl-dots .owl-dot{
+	width:30px;
+	height: 3px;
+	background:#ddd;
+	border:none;
+	margin:5px;
+}
+
+.partner #owl-partner .owl-dots .active{
+	background:#edb542;
+	height: 5px;
+}
+
+
+/*---------footer css---------*/
+
+.footerWrap{
+	position: relative;
+	background:url(../images/footer-bg.jpg) no-repeat;
+	background-size: cover;
+	color:#dedede;
+	line-height: 2rem;
+	padding:4rem 0;
+}
+
+.footerWrap h3{
+	color:#fff;
+	font-size: 1.8rem;
+	font-weight:bold;
+	margin-bottom: 3rem;
+}
+
+.footerWrap .company{
+	padding:0 2%;
+
+}
+
+.footerWrap .company .footLogo{
+	padding-bottom: 2.5rem;
+}
+
+.footerWrap .contactInfo li{
+	padding: 5px 0;
+}
+
+.footerWrap .contactInfo li i{
+	width:30px;
+}
+
+.footerWrap .menuLink {
+	padding-left:4rem;
+}
+
+.footerWrap .menuLink ul li{
+	border-bottom:1px solid #626262;
+	width:11rem;
+	padding:3px;
+}
+
+.footerWrap .menuLink ul li a{
+	color:#dedede;
+}
+
+.footerWrap .menuLink ul li i{
+	padding-right: 1rem;
+}
+
+.footerWrap .footer {
+	width:100%;
+	padding-bottom: 20px;
+	background:rgba(0,0,0,0.5);
+	color:#dedede;
+	margin-top: 6rem;
+	margin-bottom: -4rem;
+}
+
+.footerWrap .footer .returnTop{
+	display: block;
+	width: 60px;
+	margin: 0 auto;
+	height: 30px;
+	border-radius: 150px 150px 0 0;
+	color:#edb542;
+	background:rgba(0,0,0,0.5);
+	position: relative;
+	top:-25px;
+	font-size: 1.6rem;
+	text-align: center;
+}
+
+.footerWrap .footer .returnTop i{
+	position: relative;
+	top:2px;
+}
+
+.footerWrap .footer .outLink{
+	float:right;
+}
+
+.footerWrap .footer .outLink li{
+	float:left;
+	padding:0 10px;
+}
+
+.footerWrap .footer .outLink li a{
+	color:#dedede;
+}
+
+@media(max-width: 992px){
+.footerWrap{
+	text-align: center;
+}
+
+.container{
+	width:90%;
+	margin:0 auto;
+	padding:0;
+}
+
+.footerWrap .footer .copyRight, .footerWrap .footer .outLink{
+	width:100%;
+	text-align: center;
+}
+.footerWrap .footer .outLink{
+	padding-left: 40%;
+}
+
+.header .pc-header{
+	margin: 0;
+}
+}
+
+@media(max-width: 767px){
+.header{
+	background:#333;
+}
+
+.header .pc-header {
+    background-color: rgba(0,0,0,0.85);
+    z-index: -3;
+}
+
+.header .pc-header .hdLeft .bgColor1{
+	width:30%;
+}
+.header .pc-header .hdLeft .bgColor2{
+	width:70%;
+}
+
+.header .pc-header .hdRight .menuBox{
+	display: none;
+}
+
+.header .pc-header .hdRight .searchBtn{
+	padding:0;
+}
+}
