@@ -103,7 +103,7 @@ a, a:hover{
 	width: 10rem;
 	float:left;
 	color:#fff;
-	padding-left:10px;
+	padding-left:0.8rem;
 	background:url(../images/pattren.png) repeat ;
 	background-color: rgba(0,0,0,0.5);
 	opacity: 0.8;
@@ -266,6 +266,12 @@ a, a:hover{
 	border-color:#edb542;
 }
 
+@media(max-width:768px){
+.carousel-inner .item img{
+	height: 30rem;
+}
+}
+
 
 /*---------info css---------*/
 
@@ -389,6 +395,12 @@ a, a:hover{
 	line-height: 55px;
 }
 
+@media(max-width: 990px){
+.partner .titBox{
+	margin-top:0;
+	margin-bottom: 1rem;
+}
+}
 
 /*---------product css---------*/
 
@@ -521,17 +533,29 @@ a, a:hover{
 	position: relative;
 	top:30px;
 	font-size: 1.4rem;
-	margin-bottom: 30px;
 }
 
 .newsBottomWrap .readMore a{
 	display: inline-block;
 	background: #ddd;
 	padding:10px 30px;
+	margin-bottom: 2rem;
 	border-radius: 4px;
 }
 .newsBottomWrap .readMore a:hover{
 	background: #edb542;
+}
+
+@media(max-width: 768px){
+.newsImgBox img{
+	width:100%;
+}
+}
+
+@media(max-width: 990px){
+.newsBottomWrap .readMore{
+	margin-bottom: 30px;
+}
 }
 
 
@@ -763,11 +787,13 @@ a, a:hover{
 	width:70%;
 }
 
-.header .pc-header .hdRight .menuBox{
-	display: none;
-}
-
 .header .pc-header .hdRight .searchBtn{
 	padding:0;
+}
+}
+
+@media(max-width: 1024px){
+.header .pc-header .hdRight .menuBox{
+	display: none;
 }
 }
