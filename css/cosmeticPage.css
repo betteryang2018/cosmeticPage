@@ -100,10 +100,10 @@ a, a:hover{
 }
 
 .header .cartLink{
-	width: 10rem;
+	width: 11rem;
 	float:left;
 	color:#fff;
-	padding-left:0.8rem;
+	padding-left:1rem;
 	background:url(../images/pattren.png) repeat ;
 	background-color: rgba(0,0,0,0.5);
 	opacity: 0.8;
